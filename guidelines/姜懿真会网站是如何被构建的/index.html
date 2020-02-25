@@ -7,18 +7,23 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-<title>标签: test - 姜懿真会</title>
+<title>姜懿真会网站是如何被构建的 - 姜懿真会</title>
 
 
-    <meta property="og:type" content="website">
-<meta property="og:title" content="姜懿真会">
-<meta property="og:url" content="https://www.jyzh.de/tags/test/index.html">
+    <meta name="description" content="这篇文章将会介绍如何构建像姜懿真会官网这样的网站.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="姜懿真会网站是如何被构建的">
+<meta property="og:url" content="https://www.jyzh.de/guidelines/%E5%A7%9C%E6%87%BF%E7%9C%9F%E4%BC%9A%E7%BD%91%E7%AB%99%E6%98%AF%E5%A6%82%E4%BD%95%E8%A2%AB%E6%9E%84%E5%BB%BA%E7%9A%84/index.html">
 <meta property="og:site_name" content="姜懿真会">
+<meta property="og:description" content="这篇文章将会介绍如何构建像姜懿真会官网这样的网站.">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://www.jyzh.de/images/og_image.png">
+<meta property="og:image" content="https://pic.downk.cc/item/5e5490646127cc071394d81a.png">
+<meta property="article:published_time" content="2020-02-25T01:00:48.000Z">
+<meta property="article:modified_time" content="2020-02-25T03:11:46.057Z">
 <meta property="article:author" content="Priory of Shiba">
+<meta property="article:tag" content="技术指南">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://www.jyzh.de/images/og_image.png">
+<meta name="twitter:image" content="https://pic.downk.cc/item/5e5490646127cc071394d81a.png">
 
 
 
@@ -84,7 +89,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="https://pic.downk.cc/item/5e4f207648b86553ee1c0c1b.png" alt="姜懿真会" height="28">
+                <img src="https://pic.downk.cc/item/5e4f207648b86553ee1c0c1b.png" alt="姜懿真会网站是如何被构建的" height="28">
             
             </a>
         </div>
@@ -125,37 +130,30 @@
     <section class="section">
         <div class="container">
             <div class="columns">
-                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main"><div class="card">
-    <div class="card-content">
-        <nav class="breadcrumb" aria-label="breadcrumbs">
-        <ul>
-            <li><a href="/tags">标签</a></li>
-            <li class="is-active"><a href="#" aria-current="page">test</a></li>
-        </ul>
-        </nav>
-    </div>
-</div>
-
-    
+                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main">
 <div class="card">
     
     <div class="card-image">
-        <a href="/uncategorized/This-is-a-test/" class="image is-7by1">
-            <img class="thumbnail" src="https://pic.downk.cc/item/5e4f28bc48b86553ee1e4ba3.gif" alt="This is a test">
-        </a>
+        <span  class="image is-7by1">
+            <img class="thumbnail" src="https://pic.downk.cc/item/5e5490646127cc071394d81a.png" alt="姜懿真会网站是如何被构建的">
+        </span>
     </div>
     
     <div class="card-content article ">
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2020-02-21T01:07:10.000Z">2020-02-21</time>
+                <time class="level-item has-text-grey" datetime="2020-02-25T01:00:48.000Z">2020-02-25</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/guidelines/">guidelines</a>
+                </div>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    几秒 读完 (大约 20 个字)
+                    6 分钟 读完 (大约 883 个字)
                 </span>
                 
                 
@@ -164,12 +162,79 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                <a class="has-link-black-ter" href="/uncategorized/This-is-a-test/">This is a test</a>
+                姜懿真会网站是如何被构建的
             
         </h1>
         <div class="content">
-            <h1 id="THIS-IS-A-TEST"><a href="#THIS-IS-A-TEST" class="headerlink" title="THIS IS A TEST"></a>THIS IS A TEST</h1><p><img src="https://pic.downk.cc/item/5e4f2e6448b86553ee1fc43b.jpg" alt=""></p>
-<h2 id="Priory-of-Shiba"><a href="#Priory-of-Shiba" class="headerlink" title="Priory of Shiba"></a>Priory of Shiba</h2>
+            <p>这篇文章将会介绍如何构建像姜懿真会官网这样的网站.</p>
+<a id="more"></a>
+
+<h1 id="开始"><a href="#开始" class="headerlink" title="开始"></a>开始</h1><p>姜懿真会的官网使用<a href="https://hexo.io/">hexo</a>博客框架和<a href="https://ppoffice.github.io/hexo-theme-icarus">icarus</a>主题构建.</p>
+<h1 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h1><p>安装hexo之前, 需要先安装git, nodejs和npm. 由于某些特殊原因, 在中国大陆建议使用淘宝npm源下载hexo: </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo -g</span><br></pre></td></tr></table></figure>
+
+<p>或者在中国大陆: </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo -g --registry&#x3D;https:&#x2F;&#x2F;registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
+
+<p>在使用之前, 请先配置好git. 关于配置git的方法可以参考<a href="https://git-scm.com">git官网</a>.</p>
+<h1 id="创建工作目录"><a href="#创建工作目录" class="headerlink" title="创建工作目录"></a>创建工作目录</h1><p>新建一个目录, 然后运行: </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure>
+
+<p>这一命令会从GitHub上克隆<code>hexo-start</code>仓库, 并把<code>landscape</code>主题克隆到工作目录下的<code>themes/</code>目录. </p>
+<p>由于中国大陆的某些特殊原因, 从GitHub克隆仓库可能很慢, 建议魔法上网.</p>
+<p>安装hexo的git部署工具:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git</span><br></pre></td></tr></table></figure>
+
+<p>在工作目录初始化完成之后, 请运行: </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></table></figure>
+
+<p>来安装所有依赖模块. (在中国大陆建议使用淘宝npm源.)</p>
+<h1 id="安装主题"><a href="#安装主题" class="headerlink" title="安装主题"></a>安装主题</h1><p>姜懿真会网站使用<a href="https://ppoffice.github.io/hexo-theme-icarus">icarus</a>主题. </p>
+<p>把主题的仓库clone到<code>themes/</code>目录下. </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;ppoffice.github.io&#x2F;hexo-theme-icarus.git .&#x2F;themes&#x2F;icarus&#x2F;</span><br></pre></td></tr></table></figure>
+
+<p>将<code>_config.yml</code>中的themes项修改为<code>icarus</code>. </p>
+<h1 id="建站与购买域名"><a href="#建站与购买域名" class="headerlink" title="建站与购买域名"></a>建站与购买域名</h1><p>姜懿真会的网站在GitHub Pages上托管. </p>
+<p>如果你不使用GitHub, 许多其他的git托管平台(比如: gitee)也提供类似服务.</p>
+<p>首先, 需要在GitHub上新建一个仓库. 在博客中新建一篇文章, 生成静态文件然后部署到git仓库(关于生成与部署会在下方讲到). 进入GitHub中仓库的设置界面, 将<code>GitHub Page -&gt; Source</code>选项设为gh-pages分支. 保存设置后, 如果看见: <code>Your site is published at https://***.github.io/***</code>, 则证明部署成功.</p>
+<p>接下来, 我们需要购买一个域名. 我们可以从<a href="https://sg.godaddy.com/zh">GoDaddy</a>或者<a href="https://wanwang.aliyun.com">万网</a>购买域名. 由于万网在中国大陆, 需要对一些域名进行备案, 所以建议在GoDaddy购买. </p>
+<p>购买完域名后, 进入管理控制台修改DNS. 新建一个CNAME记录, 主机名设为<code>@</code>或者<code>www</code>, 记录值设为<code>https://***.github.io</code>(将***替换为你的GitHub用户名), 保存设置.  </p>
+<h1 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h1><p>回到工作目录下.</p>
+<p>在<code>./_config.yml</code>中包含hexo博客的配置项, 在<code>./themes/path-to-theme/_config.yml</code>中包含对应主题的配置项. 关于配置项的用法, 请参考hexo官网和对应主题的文档. </p>
+<p>icarus主题包含对valine和Google Analytics的支持. valine是一个基于LeanCloud的评论系统, Google Analytics是谷歌的网络分析工具. 更多信息可以参考<a href="https://valine.js.org/">valine官网</a>和<a href="https://analytics.google.com/">Google Analytics官网(需要魔法上网)</a></p>
+<h1 id="发布文章与部署"><a href="#发布文章与部署" class="headerlink" title="发布文章与部署"></a>发布文章与部署</h1><p>创建一个新文章:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new post ***</span><br></pre></td></tr></table></figure>
+
+<p>会在<code>./source/_posts</code>创建<code>***.md</code>.</p>
+<p>生成静态文件:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>在本地服务器上预览博客:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure>
+
+<p>访问<code>http://localhost:4000</code>即可预览博客网站.</p>
+<p>在<code>./source/</code>下创建一个<code>CNAME</code>文件, 填入之前购买的域名, 例如:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">echo www.jyzh.de &gt; .&#x2F;source&#x2F;CNAME</span><br></pre></td></tr></table></figure>
+
+<p>在<code>./_config.yml</code>中将<code>deployment</code>选项设为如下值:</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">type:</span> <span class="string">'git'</span></span><br><span class="line"><span class="attr">repo:</span> <span class="string">git@git.hosting/path-to-your-repo.git</span></span><br><span class="line"><span class="attr">brunch:</span> <span class="string">gh-pages</span></span><br></pre></td></tr></table></figure>
+
+<p>将git仓库uri设为你的仓库uri. 保存配置.</p>
+<p>部署:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>如果以上配置正确, 那么访问<code>http://your.domain/</code>就能看到网站.</p>
+<p>以上（</p>
+
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/tags/%E6%8A%80%E6%9C%AF%E6%8C%87%E5%8D%97/" rel="tag">技术指南</a>
+                </div>
+            </div>
         </div>
         
         
@@ -179,11 +244,63 @@
 
 
 
+<div class="card">
+    <div class="card-content">
+        <h3 class="menu-label has-text-centered">喜欢这篇文章？打赏一下作者吧</h3>
+        <div class="buttons is-centered">
+            
+                
+<a class="button is-success donate">
+    <span class="icon is-small">
+        <i class="fab fa-weixin"></i>
+    </span>
+    <span>微信</span>
+    <div class="qrcode"><img src="https://pic.downk.cc/item/5e4f253148b86553ee1d656e.png" alt="微信"></div>
+</a>
+
+                
+        </div>
+    </div>
+</div>
 
 
 
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/guidelines/%E8%AF%84%E8%AE%BA%E4%B8%8E%E5%8F%91%E5%B8%83%E6%96%87%E7%AB%A0%E6%8A%80%E6%9C%AF%E6%8C%87%E5%8D%97/">
+                <span class="level-item">评论与发布文章技术指南</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
 
 
+
+<div class="card">
+    <div class="card-content">
+        <h3 class="title is-5 has-text-weight-normal">评论</h3>
+        
+<div id="valine-thread" class="content"></div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js"></script>
+<script>
+    new Valine({
+        el: '#valine-thread' ,
+        notify: false,
+        verify: false,
+        app_id: 'g7ii1rE2zNwstMYr4d1BBIeB-MdYXbMMI',
+        app_key: 'yP4Fs2P7hJg2GtSprpiT9q7h',
+        placeholder: 'Say something...'
+    });
+</script>
+
+    </div>
+</div>
 </div>
                 
 
@@ -656,7 +773,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="https://pic.downk.cc/item/5e4f207648b86553ee1c0c1b.png" alt="姜懿真会" height="28">
+                    <img src="https://pic.downk.cc/item/5e4f207648b86553ee1c0c1b.png" alt="姜懿真会网站是如何被构建的" height="28">
                 
                 </a>
                 <p class="is-size-7">
