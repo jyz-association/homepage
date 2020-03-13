@@ -7,12 +7,12 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-<title>标签: test - 姜懿真会</title>
+<title>标签: 欣欣学竞赛 - 姜懿真会</title>
 
 
     <meta property="og:type" content="website">
 <meta property="og:title" content="姜懿真会">
-<meta property="og:url" content="https://www.jyzh.de/tags/test/index.html">
+<meta property="og:url" content="https://www.jyzh.de/tags/%E6%AC%A3%E6%AC%A3%E5%AD%A6%E7%AB%9E%E8%B5%9B/index.html">
 <meta property="og:site_name" content="姜懿真会">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://www.jyzh.de/images/og_image.png">
@@ -132,7 +132,7 @@
         <nav class="breadcrumb" aria-label="breadcrumbs">
         <ul>
             <li><a href="/tags">标签</a></li>
-            <li class="is-active"><a href="#" aria-current="page">test</a></li>
+            <li class="is-active"><a href="#" aria-current="page">欣欣学竞赛</a></li>
         </ul>
         </nav>
     </div>
@@ -141,23 +141,21 @@
     
 <div class="card">
     
-    <div class="card-image">
-        <a href="/uncategorized/This-is-a-test/" class="image is-7by1">
-            <img class="thumbnail" src="https://pic.downk.cc/item/5e4f28bc48b86553ee1e4ba3.gif" alt="This is a test">
-        </a>
-    </div>
-    
     <div class="card-content article ">
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2020-02-21T01:07:10.000Z">2020-02-21</time>
+                <time class="level-item has-text-grey" datetime="2020-03-13T10:41:20.000Z">2020-03-13</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/technology/">technology</a>
+                </div>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    几秒 读完 (大约 20 个字)
+                    2 分钟 读完 (大约 251 个字)
                 </span>
                 
                 
@@ -166,12 +164,18 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                <a class="has-link-black-ter" href="/uncategorized/This-is-a-test/">This is a test</a>
+                <a class="has-link-black-ter" href="/technology/%E9%BB%91%E5%8C%A3%E5%AD%90-%E9%A2%98%E8%A7%A3/">黑匣子-题解</a>
             
         </h1>
         <div class="content">
-            <h1 id="THIS-IS-A-TEST"><a href="#THIS-IS-A-TEST" class="headerlink" title="THIS IS A TEST"></a>THIS IS A TEST</h1><p><img src="https://pic.downk.cc/item/5e4f2e6448b86553ee1fc43b.jpg" alt=""></p>
-<h2 id="Priory-of-Shiba"><a href="#Priory-of-Shiba" class="headerlink" title="Priory of Shiba"></a>Priory of Shiba</h2>
+            <h1 id="黑匣子-题解"><a href="#黑匣子-题解" class="headerlink" title="黑匣子-题解"></a>黑匣子-题解</h1><p>由于我们要取出第i小的数，而堆可以取出最小的数，因此我们想到可以用堆来解决问题。</p>
+<p>建两个堆，一个小根堆，记为<code>hp1</code>，一个大根堆，记为<code>hp2</code></p>
+<p>先把$a$和$b$分别读入，然后扫描$b$</p>
+<p>对于$b$的每一项$b_i$，从$a$中按顺序取出项直到总共有$b_i$项被取出，把它们加入<code>hp1</code></p>
+<p>把<code>hp1</code>里最小的一项pop出来，插入到<code>hp2</code>上</p>
+<p>然后就是关键的对顶操作。只要<code>hp1</code>中有小于<code>hp2</code>中最大元素的元素，就把<code>hp1</code>和<code>hp2</code>互换堆顶，这样可以保证$\forall x \in hp1, x &gt; max(hp2)$</p>
+<p>输出<code>hp2</code>堆顶</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=m;i++)&#123;</span><br><span class="line">    <span class="keyword">for</span>(;j&lt;=b[i];j++)&#123;</span><br><span class="line">        hp1.push(a[j]);</span><br><span class="line">    &#125;</span><br><span class="line">    hp2.push(hp1.top());hp1.pop();</span><br><span class="line">    <span class="keyword">while</span>(!hp1.empty() &amp;&amp; hp1.top()&lt;hp2.top())&#123;</span><br><span class="line">        <span class="keyword">int</span> hp1top = hp1.top();hp1.pop();</span><br><span class="line">        <span class="keyword">int</span> hp2top = hp2.top();hp2.pop();</span><br><span class="line">        hp1.push(hp2top);</span><br><span class="line">        hp2.push(hp1top);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"%d\n"</span>,hp2.top());</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
         </div>
         
         
