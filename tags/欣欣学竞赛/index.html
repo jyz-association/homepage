@@ -155,7 +155,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    2 分钟 读完 (大约 251 个字)
+                    2 分钟 读完 (大约 247 个字)
                 </span>
                 
                 
@@ -168,16 +168,17 @@
             
         </h1>
         <div class="content">
-            <h1 id="黑匣子-题解"><a href="#黑匣子-题解" class="headerlink" title="黑匣子-题解"></a>黑匣子-题解</h1><p>由于我们要取出第i小的数，而堆可以取出最小的数，因此我们想到可以用堆来解决问题。</p>
-<p>建两个堆，一个小根堆，记为<code>hp1</code>，一个大根堆，记为<code>hp2</code></p>
-<p>先把$a$和$b$分别读入，然后扫描$b$</p>
-<p>对于$b$的每一项$b_i$，从$a$中按顺序取出项直到总共有$b_i$项被取出，把它们加入<code>hp1</code></p>
-<p>把<code>hp1</code>里最小的一项pop出来，插入到<code>hp2</code>上</p>
-<p>然后就是关键的对顶操作。只要<code>hp1</code>中有小于<code>hp2</code>中最大元素的元素，就把<code>hp1</code>和<code>hp2</code>互换堆顶，这样可以保证$\forall x \in hp1, x &gt; max(hp2)$</p>
-<p>输出<code>hp2</code>堆顶</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=m;i++)&#123;</span><br><span class="line">    <span class="keyword">for</span>(;j&lt;=b[i];j++)&#123;</span><br><span class="line">        hp1.push(a[j]);</span><br><span class="line">    &#125;</span><br><span class="line">    hp2.push(hp1.top());hp1.pop();</span><br><span class="line">    <span class="keyword">while</span>(!hp1.empty() &amp;&amp; hp1.top()&lt;hp2.top())&#123;</span><br><span class="line">        <span class="keyword">int</span> hp1top = hp1.top();hp1.pop();</span><br><span class="line">        <span class="keyword">int</span> hp2top = hp2.top();hp2.pop();</span><br><span class="line">        hp1.push(hp2top);</span><br><span class="line">        hp2.push(hp1top);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"%d\n"</span>,hp2.top());</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+            <p>由于我们要取出第i小的数，而堆可以取出最小的数，因此我们想到可以用堆来解决问题。</p>
         </div>
         
+        
+        <div class="level is-mobile">
+            <div class="level-start">
+                <div class="level-item">
+                <a class="button is-size-7 is-light" href="/technology/%E9%BB%91%E5%8C%A3%E5%AD%90-%E9%A2%98%E8%A7%A3/#more">阅读更多</a>
+                </div>
+            </div>
+        </div>
         
         
     </div>
