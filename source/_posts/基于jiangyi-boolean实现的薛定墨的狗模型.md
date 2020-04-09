@@ -5,7 +5,7 @@ tags: AprilFoolsDay
 category: Science
 ---
 
-摘要：jiangyi-boolean是一个通过伪随机的数学方法产生布尔型的模块。通过jiangyi-boolean，借助Isotope单片机，我们实现了一个24线程并发通过产生随机布尔型值来决定姜懿真生死的物理模型。通过最高可达86GHz的处理频率对姜懿真进行认为干涉，我们得出了这一逻辑模型，即薛定墨的狗。
+摘要：jiangyi-boolean是一个通过伪随机的数学方法产生布尔型的模块。通过jiangyi-boolean，借助Isotope单片机，我们实现了一个24线程并发通过产生随机布尔型值来决定姜懿真生死的物理模型。通过最高可达86GHz的处理频率对姜懿真进行认为干涉，我们得出了这一逻辑模型，即薛定墨的狗。 
 
 <!--more-->
 
